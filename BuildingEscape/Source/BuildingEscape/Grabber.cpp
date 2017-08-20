@@ -89,7 +89,7 @@ FVector UGrabber::GetReachLineStart() {
 		OUT PlayerViewPointLocation,
 		OUT PlayerViewPointRotation
 	);
-	return PlayerViewPointLocation + PlayerViewPointRotation.Vector() * Reach;
+	return PlayerViewPointLocation;
 }
 
 
@@ -100,5 +100,5 @@ FVector UGrabber::GetReachLineEnd() {
 		OUT PlayerViewPointLocation,
 		OUT PlayerViewPointRotation
 	);
-	return PlayerViewPointLocation;
+	return PlayerViewPointLocation + PlayerViewPointRotation.Vector() * Reach;
 }
