@@ -33,4 +33,6 @@ private:
 	void Grab();
 	void Release();
 	const FHitResult GetFirstPhysicsBodyInReach();
+	FVector GetReachLineStart();
+	FVector GetReachLineEnd();
 };
